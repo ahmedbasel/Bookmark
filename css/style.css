@@ -1,0 +1,60 @@
+
+main{
+    background-color: #f7ecde;
+    min-height: 100vh;
+
+}
+
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+body{
+    font-family: "PT Sans Caption", sans-serif;
+
+}
+
+h2{
+    border-top: 2px dotted black;
+    color: #3ca55c;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.btn{
+    background: #d1512d;
+    color: white;
+}
+.btn:hover{
+    background-color:#bb4220fa;
+    color: white;
+}
+.btnall{
+    border-bottom: 2px dotted black;
+
+}
+.btn-visit {
+    background-color: #9eb23b;
+}
+.btn-visit:hover {
+    background-color: #9eb23b;
+}
+
+
+.circles span:nth-child(1){
+    background-color: #f15f5d;
+
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
