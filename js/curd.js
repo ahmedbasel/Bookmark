@@ -9,6 +9,8 @@ if (localStorage.getItem("data") !== null) {
   } else {
     var booklist = []; 
   }
+
+
  
   function addbook() {
     var nameRegex = /^[a-z A-Z]{3,}$/;
@@ -26,7 +28,17 @@ if (localStorage.getItem("data") !== null) {
         return;
     }
 
-   
+     
+    for (var i = 0; i < booklist.length; i++) {
+        if (booklist[i].bookname === bookmarkName.value) {
+            showError("Site Name is already added!");
+            return;
+        }
+        if (booklist[i].bookurl === bookmarkURL.value) {
+            showError("Site URL is already added!");
+            return;
+        }
+    }
     var book = {
         bookname: bookmarkName.value,
         bookurl: bookmarkURL.value
